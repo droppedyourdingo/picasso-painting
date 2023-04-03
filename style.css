@@ -6,24 +6,119 @@
 
 .box {
     background-color: darkcyan;
-    height: 100px;
+    height: 20vw;
 }
 
 #box4 {
     background-color: darkcyan;
     margin-top: 10px;
-    height: 200px;
+    height: 30vw;
 }
 
 #box5 {
     background-color: green;
     margin-top: 10px;
-    height: 20px;
+    height: 3vw;
 }
+
+.bigCircle {
+    position: relative;
+}
+
+.circle {
+    border-radius: 360vh;
+    z-index: 1;
+}
+
+#big1 {
+    background-color: yellow;
+    height: 7vw;
+    width: 7vw;
+    bottom: 45vw;
+    left: 18vw;
+    position: absolute;
+}
+
+#big2 {
+    background-color: pink;
+    height: 7vw;
+    width: 7vw;
+    bottom: 32vw;
+    left: 28vw;
+    position: absolute;
+}
+.smallCircle {
+    position: relative;
+}
+
+#small1 {
+    background-color: pink;
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 50vw;
+    left: 6vw;
+}
+
+#small2 {
+    background-color: pink;
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 42vw;
+    left: 8vw;
+}
+
+#small3 {
+    background-color: pink;
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 50vw;
+    left: 40vw;
+}
+
+#small4 {
+    background-color: yellow;
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 28vw;
+    left: 16vw;
+}
+
+.triangle {
+    position: relative;
+    float: right;
+    bottom: 29vw;
+    width: 0vw; 
+    height: 0vw; 
+    border-left: 15vw solid transparent;
+    border-right: 15vw solid transparent;
+    border-bottom: 25vw solid green;
+    z-index: 2;
+  }
+
+  .triangle2 {
+    position: relative;
+    float: right;
+    bottom: 34vw;
+    left: 10vw;
+    width: 0vw; 
+    height: 0vw; 
+    border-left: 15vw solid transparent;
+    border-right: 15vw solid transparent;
+    border-bottom: 30vw solid greenyellow;
+  }
 
 .form {
     display: flex;
     justify-content: space-around;
+    width: inherit;
 }
 
 .form-column {
@@ -34,4 +129,24 @@
 button {
     float: right;
     margin: 1em 15% 0 0;
+}
+
+@media screen and (max-width: 320px) {
+    .form {
+        margin: 0px auto;
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .form {
+        
+    }
+}
+
+@media screen and (min-width: 768px){
+    .form {
+        margin: 0px auto;
+        padding: 0px;
+    }
 }
